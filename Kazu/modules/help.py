@@ -38,13 +38,13 @@ async def module_help(client: Client, message: Message):
             print(f"{e}")
             ac = PrettyTable()
             ac.header = False
-            ac.title = "PyroZu-UserBot Plugins"
+            ac.title = "ALBY-PYROBOT Plugins"
             ac.align = "l"
             for x in split_list(sorted(CMD_HELP.keys()), 2):
                 ac.add_row([x[0], x[1] if len(x) >= 2 else None])
             xx = await client.send_message(
                 message.chat.id,
-                f"```{str(ac)}```\n• @kazusupportgrp × @Html12text •",
+                f"```{str(ac)}```\n• @ruangdiskusikami × @ruangprojects •",
                 reply_to_message_id=ReplyCheck(message),
             )
             await xx.reply(
@@ -80,12 +80,12 @@ async def module_helper(client: Client, message: Message):
     elif not message.reply_to_message and len(cmd) == 1:
         ac = PrettyTable()
         ac.header = False
-        ac.title = "PyroZu-UserBot Plugins"
+        ac.title = "ALBY-PYROBOT Plugins"
         ac.align = "l"
         for x in split_list(sorted(CMD_HELP.keys()), 2):
             ac.add_row([x[0], x[1] if len(x) >= 2 else None])
         await edit_or_reply(
-            message, f"```{str(ac)}```\n• @kazusupportgrp × @Html12text •"
+            message, f"```{str(ac)}```\n• @ruangdiskusikami × @ruangprojects •"
         )
         await message.reply(
             f"**Usage**:`.help broadcast` **To View Module details**"
