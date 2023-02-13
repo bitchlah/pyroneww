@@ -78,7 +78,7 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"❏ **Pʏʀᴏᴢᴜ-Usᴇʀʙᴏᴛ ✨**\n"
+        f"❏ **㊪ ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ ㊪**\n"
         f"├• **Pɪɴɢᴇʀ** - `%sms`\n"
         f"├• **Uᴘᴛɪᴍᴇ -** `{uptime}` \n"
         f"└• **Oᴡɴᴇʀ :** {client.me.mention}" % (duration)
@@ -86,25 +86,21 @@ async def pingme(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("ceping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("kaumku", ["."]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("kping", cmd) & filters.me)
+@Client.on_message(filters.command("absen", cmd) & filters.me)
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(message, "⚡⚡⚡⚡")
-    await xx.edit("⚡")
-    await xx.edit("⚡⚡")
-    await xx.edit("⚡⚡⚡")
-    await xx.edit("⚡⚡⚡⚡✨")
-    await xx.edit("Awas awas awas babunya Kazu mau lewat😎")
+    xx = await edit_or_reply(message, "🕊️🕊️🕊️🕊️")
+    await xx.edit("🕊️")
+    await xx.edit("🕊️🕊️")
+    await xx.edit("🕊️🕊️🕊️")
+    await xx.edit("🕊️🕊️🕊️🕊️✨")
+    await xx.edit("Anak Buah Mau Laporan 🤬")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **PONG!!🏓**\n"
-        f"├• **Pinger** - `%sms`\n"
-        f"├• **Uptime -** `{uptime}` \n"
-        f"└• **Owner :** {client.me.mention}" % (duration)
+        f"❏ **Hadir Tuan! 🖐🏻**"
     )
-
 
