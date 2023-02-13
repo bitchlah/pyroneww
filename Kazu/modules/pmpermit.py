@@ -22,15 +22,15 @@ from Kazu.helpers.tools import get_arg
 from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
-    "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "         ✨ 𝙹𝙰𝙽𝙶𝙰𝙽 𝚂𝙿𝙰𝙼 𝚈𝙰 𝙳𝙴𝙺 ✨\n"
-    "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
-    "• Saya belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai saya menyetujui PM anda.\n"
-    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
-    "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "       𝙿𝙴𝚂𝙰𝙽 𝙾𝚃𝙾𝙼𝙰𝚃𝙸𝚂 𝙱𝚈 : 𝙿𝚈𝚁𝙾𝚉𝚄\n"
-    "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
+    "╔════════════════════╗\n"
+    "         🚧 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 🚧\n"
+    "╚════════════════════╝\n"
+    "► Saya belum menyetujui anda untuk PM.\n"
+    "► Tunggu sampai saya menyetujui PM anda.\n"
+    "► Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    "╭╌╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╌╮\n"
+    "┊➭ ᴘᴇsᴀɴ ᴏᴛᴏᴍᴀᴛɪs ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ\n"
+    "╰╌╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╌╯\n"
 )
 
 
@@ -105,7 +105,7 @@ async def auto_accept(client, message):
             approve(message.chat.id)
             await client.send_message(
                 message.chat.id,
-                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer PyroZu-Userbot</b>",
+                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer ALBY-PYROBOT</b>",
                 parse_mode=enums.ParseMode.HTML,
             )
         except IntegrityError:
