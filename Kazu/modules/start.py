@@ -27,14 +27,14 @@ absen = [
     "**Hadir dong** 😁",
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
+    "**Hadir Tuan** 🙏🏻",
     "**Hadir kak maap telat** 🥺",
 ]
 
 
 @Client.on_message(filters.command("absen", ["."]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
-    await message.reply("**Saya Hadir Tuan Kazu**")
-
+    await message.reply_text(random.choice(kontol))
 
 @Client.on_message(filters.command("repo", cmd) & filters.me)
 async def repo(client: Client, message: Message):
