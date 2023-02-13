@@ -44,9 +44,9 @@ async def shutdown_bot(client: Client, message: Message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**PyroZu-Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**ALBY-PYROBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(message, "**PyroZu-Userbot Berhasil di matikan!**")
+    await edit_or_reply(message, "**ALBY-PYROBOT Berhasil di matikan!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:
@@ -66,7 +66,7 @@ async def logs_ubot(client: Client, message: Message):
     await client.send_document(
         message.chat.id,
         "Logs-Heroku.txt",
-        thumb="Kazu/resources/logo.jpg",
+        thumb="Kazu/resources/pyroby.jpg",
         caption="**Ini Logs Heroku anda**",
     )
     await Man.delete()
