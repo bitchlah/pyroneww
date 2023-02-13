@@ -33,9 +33,9 @@ from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph//file/64202f501f38a39b1a8ca.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg"
 )
-emoji = gvarstatus("ALIVE_EMOJI") or "『★』"
+emoji = gvarstatus("ALIVE_EMOJI") or "㊪"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✨ᴘʀᴇᴍɪᴜᴍ✨"
 
 
@@ -46,7 +46,7 @@ async def alive(client: Client, message: Message):
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"**༺ [𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://github.com/ionmusic/PyroZu-Userbot) ༻**\n\n"
+        f"**⊱ ───── { [ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ](https://github.com/PunyaAlby ) } ───── ⊰**\n\n"
         f"<b>{alive_text}</b>\n\n"
         f"{emoji} <b>Mᴀsᴛᴇʀ :</b> {client.me.mention} \n"
         f"{emoji} <b>Mᴏᴅᴜʟᴇs :</b> <code>{len(modules)} Modules</code> \n"
@@ -54,7 +54,11 @@ async def alive(client: Client, message: Message):
         f"{emoji} <b>Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :</b> <code>{python_version()}</code> \n"
         f"{emoji} <b>Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :</b> <code>{versipyro}</code> \n"
         f"{emoji} <b>Bᴏᴛ Uᴘᴛɪᴍᴇ :</b> <code>{uptime}</code> \n\n"
-        f"    **『 [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/{GROUP})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/{CHANNEL})** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={client.me.id}) 』**"
+        f"　  (\︵/) \n"
+        f"　⫺( •ᆺ•)⫹ \n"
+        f"┏━∪ ━━━━━━━━━━━\n"
+        f"╏<b>[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/ruangdiskusikami)</b> & <b>[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/ruangprojects)</b>\n"
+        f"┗━━━━━━━━━━━━━"
     )
     try:
         await asyncio.gather(
