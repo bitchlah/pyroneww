@@ -45,6 +45,6 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("Kazu").info("ALBY-PYROBOT Telah Aktif ♨️")
+    LOGGER("ALBY").info("ALBY-PYROBOT Telah Aktif ♨️")
     install()
     LOOP.run_until_complete(main())
