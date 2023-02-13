@@ -92,9 +92,8 @@ async def pingme(client: Client, message: Message):
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(message, "🕊️🕊️🕊️🕊️")
+    xx = await edit_or_reply(message, "🕊️")
     await xx.edit("🕊️")
-    await xx.edit("Anak Buah Mau Laporan 🤬")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
