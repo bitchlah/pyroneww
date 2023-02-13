@@ -126,11 +126,11 @@ async def create_botlog(client):
     if HAPP is None:
         return
     LOGGER("Kazu").info(
-        "TUNGGU SEBENTAR SAYANG. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK KAMU"
+        "TUNGGU SEBENTAR MANIS, SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA"
     )
-    desc = "Group Log untuk PyroZu-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n💢 Powered By ~ @Html12text 💢"
+    desc = "Group Log untuk ALBY-PYROBOT.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @ruangdiskusikami ✨"
     try:
-        gruplog = await client.create_supergroup(" Pyrozu-UserBot Log ", desc)
+        gruplog = await client.create_supergroup("ALBY-PYROBOT", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id
