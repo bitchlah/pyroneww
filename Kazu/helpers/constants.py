@@ -13,15 +13,15 @@ class First:
 **Hey**, __I am using__ ✨ **ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ** ✨
 
 ✣ **Userbot Version :** `{}`
-✣ **Group Support :** [Support](t.me/ruangdiskusikami)
-✣ **Channel Updates :** [Updates](t.me/ruangprojects)
+✣ **Group Support :** [☎️ Support](t.me/ruangdiskusikami)
+✣ **Channel Updates :** [📢 Updates](t.me/ruangprojects)
 ✣ **Owner Repo :** [『ⒶⓁⒷⓎ』](t.me/punya_alby)
 
 
 Powered by [PyroMan-Userbot](https://github.com/mrismanaziz/pyroman-userbot)"""
     CREATOR = 'I was created by my master <a href="https://github.com/PunyaAlby">『ⒶⓁⒷⓎ』</a> on a rainy day.'
     MSG_ON = """
-🕊️ **ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ** ♨️
+🕊️ **ꜰᴋᴍ ᴜꜱᴇʀʙᴏᴛ** ♨️
 ╼╍━━━━━━━━━━┅╾
       (\︵/) 
 　⫺( •ᆺ•)⫹ 
@@ -30,7 +30,6 @@ Powered by [PyroMan-Userbot](https://github.com/mrismanaziz/pyroman-userbot)"""
 ㊪ **Kᴇᴛɪᴋ** `{}alive` **Uɴᴛᴜᴋ ᴄᴇᴋ Bᴏᴛ**
 ┗╍━━━━━━━━━━┅╾
 """
-
 
 
 class Weebify:
