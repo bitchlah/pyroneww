@@ -12,10 +12,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 @app.on_message(filters.command("start") & filters.private)
 async def start(client, message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg",
+        photo=f"https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 Hᴇʟʟᴏ, I Aᴍ ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
-Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ
+💥 ʜᴇʟʟᴏ, I ᴀᴍ ꜰᴋᴍ ᴜꜱᴇʀʙᴏᴛ » ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ
+ᴘʀᴇᴍɪᴜᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ ʙᴏᴛ
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
