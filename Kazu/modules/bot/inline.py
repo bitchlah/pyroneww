@@ -70,7 +70,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg",
+            thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -85,19 +85,9 @@ async def alive_function(message: Message, answers):
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await message.reply_text("**0% ▒▒▒▒▒▒▒▒▒▒**")
-    try:
-       await message.delete()
-    except:
-       pass
-    await xx.edit("**20% ██▒▒▒▒▒▒▒▒**")
-    await xx.edit("**40% ████▒▒▒▒▒▒**")
-    await xx.edit("**60% ██████▒▒▒▒**")
-    await xx.edit("**80% ████████▒▒**")
-    await xx.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await xx.edit(
+    await message.reply_text(
         f"❏ **PONG!!🏓**\n"
         f"├• **Pinger** - `%sms`\n"
         f"├• **Uptime -** `{uptime}` \n"
@@ -106,7 +96,7 @@ async def pingme(client: Client, message: Message):
 
 async def karman_function(message: Message, answers):
     msg = (
-        f"㊪ ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ ㊪ \n"
+        f"㊪ ꜰᴋᴍ ᴜꜱᴇʀʙᴏᴛ ㊪ \n"
         "ㅤㅤsᴛᴀᴛᴜs : ᴘʀᴇᴍɪᴜᴍ ᴀᴋᴛɪғ \n"
         f"ㅤㅤㅤㅤᴍᴏᴅᴜʟᴇs:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤʙᴏᴛ ᴠᴇʀsɪᴏɴ: {BOT_VER} \n"
@@ -114,14 +104,14 @@ async def karman_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="alby",
+            title="fkm",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg",
+            thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="✨sᴜᴘᴘᴏʀᴛ✨", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="✨ᴏᴡɴᴇʀ✨", url="t.me/punya_alby")], [InlineKeyboardButton(text="✨ᴍᴇɴᴜ✨", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="🗂️ ᴍᴏᴅᴜʟᴇꜱ", callback_data="reopen")], [InlineKeyboardButton(text="☎️ sᴜᴘᴘᴏʀᴛ", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇꜱ", url="t.me/ruangprojects")]]
             ),
         )
     )
@@ -134,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg",
+            thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
