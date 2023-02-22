@@ -34,7 +34,7 @@ absen = [
 
 @Client.on_message(filters.command("absen", ["."]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
-    await message.reply_text(random.choice(kontol))
+    await message.reply("**Hadir Tuan**")
 
 @Client.on_message(filters.command("repo", cmd) & filters.me)
 async def repo(client: Client, message: Message):
