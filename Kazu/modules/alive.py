@@ -33,7 +33,7 @@ from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/7b2a3fa167686dfaa3da8.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/5a2e35283bf45b87888f2.jpg"
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "㊪"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✨ᴘʀᴇᴍɪᴜᴍ✨"
@@ -46,7 +46,7 @@ async def alive(client: Client, message: Message):
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"**⊱ ───── [ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ](https://github.com/PunyaAlby/) ───── ⊰**\n\n"
+        f"**⊱ ───── [ꜰᴋᴍ ᴜꜱᴇʀʙᴏᴛ](https://github.com/PunyaAlby/) ───── ⊰**\n\n"
         f"<b>{alive_text}</b>\n\n"
         f"{emoji} <b>Mᴀsᴛᴇʀ :</b> {client.me.mention} \n"
         f"{emoji} <b>Mᴏᴅᴜʟᴇs :</b> <code>{len(modules)} Modules</code> \n"
