@@ -10,7 +10,7 @@ from Kazu.modules.basic import join
 BOT_VER = "2.0.0"
 CMD_HANDLER = ["." "," "?" "!"]
 MSG_ON = """
-🕊️ **ᴀʟʙʏ ᴘʏʀᴏʙᴏᴛ** ♨️
+🕊️ **ꜰᴋᴍ ᴜꜱᴇʀʙᴏᴛ** ♨️
 ╼╍━━━━━━━━━━┅╾
       (\︵/) 
 　⫺( •ᆺ•)⫹ 
@@ -45,6 +45,6 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ALBY").info("ALBY-PYROBOT Telah Aktif ♨️")
+    LOGGER("ALBY").info("FKM-USERBOT Telah Aktif ♨️")
     install()
     LOOP.run_until_complete(main())
