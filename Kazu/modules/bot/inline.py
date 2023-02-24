@@ -107,6 +107,7 @@ async def karman_function(message: Message, answers):
             photo_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             title="fkm",
             description="Check Bot's Stats",
+            caption="msg",
             parse_mode=ParseMode.DEFAULT,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🗂️ ᴍᴏᴅᴜʟᴇꜱ", callback_data="reopen")], [InlineKeyboardButton(text="☎️ sᴜᴘᴘᴏʀᴛ", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇꜱ", url="t.me/ruangprojects")]]
