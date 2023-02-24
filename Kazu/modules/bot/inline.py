@@ -68,7 +68,7 @@ async def alive_function(message: Message, answers):
 """
     answers.append(
         InlineQueryResultArticle(
-            title="Alive",
+            title="alivee",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             input_message_content=InputTextMessageContent(
@@ -100,7 +100,6 @@ async def karman_function(message: Message, answers):
         "ㅤㅤsᴛᴀᴛᴜs : ᴘʀᴇᴍɪᴜᴍ ᴀᴋᴛɪғ \n"
         f"ㅤㅤㅤㅤᴍᴏᴅᴜʟᴇs:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤʙᴏᴛ ᴠᴇʀsɪᴏɴ: {BOT_VER} \n"
-        f"ㅤㅤㅤㅤʙʀᴀɴᴄʜ: {branch} \n\n"
     )
     answers.append(
         InlineQueryResultArticle(
@@ -108,7 +107,7 @@ async def karman_function(message: Message, answers):
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             input_message_content=InputTextMessageContent(
-                msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
+                msg, thumb_url, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🗂️ ᴍᴏᴅᴜʟᴇꜱ", callback_data="reopen")], [InlineKeyboardButton(text="☎️ sᴜᴘᴘᴏʀᴛ", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇꜱ", url="t.me/ruangprojects")]]
@@ -143,9 +142,9 @@ async def inline_query_handler(client: Client, query):
         answers = []
         if text.strip() == "":
             return
-        elif text.split()[0] == "alive":
-            answerss = await alive_function(query, answers)
-            await client.answer_inline_query(query.id, results=answerss, cache_time=10)
+        elif text.split()[0] == "alivee":
+            answers = await alive_function(query, answers)
+            await client.answer_inline_query(query.id, results=answers, cache_time=10)
         elif string_given.startswith("helper"):
             answers = await help_function(answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
