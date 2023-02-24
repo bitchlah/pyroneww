@@ -18,6 +18,7 @@ from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     InlineQueryResultArticle,
+    InlineQueryResultPhoto,
     InputTextMessageContent,
     Message,
 )
@@ -102,13 +103,11 @@ async def karman_function(message: Message, answers):
         f"ㅤㅤㅤㅤʙᴏᴛ ᴠᴇʀsɪᴏɴ: {BOT_VER} \n"
     )
     answers.append(
-        InlineQueryResultArticle(
+        InlineQueryResultPhoto(
+            photo_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
             title="fkm",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/5a2e35283bf45b87888f2.jpg",
-            input_message_content=InputTextMessageContent(
-                msg, "https://telegra.ph/file/5a2e35283bf45b87888f2.jpg", parse_mode=ParseMode.HTML, disable_web_page_preview=True
-            ),
+            parse_mode=ParseMode.DEFAULT,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🗂️ ᴍᴏᴅᴜʟᴇꜱ", callback_data="reopen")], [InlineKeyboardButton(text="☎️ sᴜᴘᴘᴏʀᴛ", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇꜱ", url="t.me/ruangprojects")]]
             ),
