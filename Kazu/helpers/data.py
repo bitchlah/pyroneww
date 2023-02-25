@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
 
     text_help_menu = (
-        "**📍 FKM-USERBOT 📍**\n**
+        "**📍 FKM-USERBOT 📍**"
         .replace(",", "")
         .replace("[", "")
         .replace("]", "")
