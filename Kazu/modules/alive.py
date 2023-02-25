@@ -15,8 +15,14 @@ from platform import python_version
 from pyrogram import Client
 from pyrogram import __version__ as versipyro
 from pyrogram import filters
-from pyrogram.types import Message
 from telegraph import exceptions, upload_file
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InlineQueryResultPhoto,
+    InputTextMessageContent,
+    Message,
+)
 
 from config import BOT_VER, CHANNEL
 from config import CMD_HANDLER as cmd
@@ -67,7 +73,8 @@ async def alive(client: Client, message: Message):
                 message.chat.id,
                 alive_logo,
                 caption=man,
-                reply_to_message_id=ReplyCheck(message),
+                reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton(text="🗂️ᴍᴏᴅᴜʟᴇꜱ", callback_data="reopen")], [InlineKeyboardButton(text="☎️ sᴜᴘᴘᴏʀᴛ", url="t.me/ruangdiskusikami"), InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇꜱ", url="t.me/ruangprojects")]],
             ),
         )
     except BaseException:
