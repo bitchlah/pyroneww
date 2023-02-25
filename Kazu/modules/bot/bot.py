@@ -102,7 +102,6 @@ async def on_plug_prev_in_cb(_, callback_query: CallbackQuery):
 
 
 @app.on_callback_query(filters.regex("helpme_next\((.+?)\)"))
-@cb_wrapper
 async def on_plug_next_in_cb(_, callback_query: CallbackQuery):
     current_page_number = int(callback_query.matches[0].group(1))
     buttons = paginate_help(current_page_number + 1, CMD_HELP, "helpme")
